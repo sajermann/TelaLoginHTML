@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Seu Site -Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="shortcut icon" type="image/png" href="Assets/img/faviconLogin.ico"/> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper #263238 blue-grey darken-4">
+                <a href="#" class="brand-logo center">Seu Site</a>
+            </div>
+        </nav>
+
+    </header>
+    <div class="progress progressBar" style="display:none;">
+        <div class="indeterminate"></div>
+    </div>
+    <main>
+        <div class="container divPrincipal #263238 blue-grey darken-4">
+            <div class="row">
+
+                <div class="grid-example col s12 divCentral	">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="loginUser" type="text" class="validate loginUser">
+                                    <label for="loginUser">Usuário</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">vpn_key</i>
+                                    <input id="loginPass" type="password" class="validate loginPass">
+                                    <label for="loginPass">Senha</label>
+                                    <a class="modal-trigger" href="#modal1">Esqueci a senha!</a>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Mantenha-me conectado</span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button onclick="login()" class="btn waves-effect waves-light buttonEnter" type="submit" name="action">Entrar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="modal1" class="modal #263238 blue-grey darken-4">
+            <div class="modal-content">
+                <h4>Email Recuperação</h4>
+                <div class="row">
+                    <form class="col s12 divModalPrincipal">
+                        <div class="row">
+                            <div class="input-field col s12 recuperarSenha">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                                <span class="helper-text" data-error="Email Inválido" data-success="Parece Ok"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer #455a64 blue-grey darken-2">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enviar</a>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer  #263238 blue-grey darken-4">
+        <div class="container">
+            © 2020 Todos os Direitos Reservados
+            <a class="grey-text text-lighten-4 right" href="#!">Desenvolvido por Bruno Sajermann</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

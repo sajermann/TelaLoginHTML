@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    min-height: 100vh;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+	display:flex;
+}
+
+.input-field{
+	width: 300px !important;
+}
+
+.recuperarSenha{
+	width: 260px !important;
+}
+
+input{
+	color:white !important;
+}
+
+.progressBar{
+	height:6px;
+	margin: 0px;
+}
+
+.divPrincipal{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	margin-top:6px;
+	margin-bottom: 6px;
+	border-radius: 160px 0px;
+}
+
+@media (max-width: 729px) {
+	.divPrincipal{
+		border-radius: 130px 0px;
+	}
+}
+
+#modal1, .modal-close{
+	color:white;
+}
+
+.divPrincipal i, .divPrincipal label, .divPrincipal span{
+	color: white;
+}
+
+.divCentral{
+	padding: 20px !important;
+}
+
+.divEmail{
+	width:600px !important;
+}
+
+@media(max-width: 729px) {
+	.divEmail{
+		width:300px !important;
+	}
+}
+
+.row{
+	margin-bottom: 10px !important;
+}
+
+@media(max-width: 729px) {
+	.row{display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: #01579b
+}
+
+footer{
+	padding:0px !important;
+}
